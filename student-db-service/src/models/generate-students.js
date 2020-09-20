@@ -1,8 +1,8 @@
 const faker = require('faker');
 const Student = require('./student');
 
-async function generateStudents({ empty = false }) {
-  if (empty) {
+async function generateStudents({ empty = 'false' }) {
+  if (empty === 'true') {
     console.log('empty students');
     Student.deleteMany({}, (err) => console.log(err || 'empty'));
   }
