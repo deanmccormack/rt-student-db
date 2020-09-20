@@ -1,0 +1,15 @@
+<form [formGroup]="emergencyContactFormGroup">
+  <mat-card>
+    <div class="controlers-wrapper">
+      <!-- name -->
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="emergency contact name" formControlName="name">
+      </mat-form-field>
+
+      <!-- number -->
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="emergency contact number" formControlName="num">
+      </mat-form-field>
+    </div>
+  </mat-card>
+</form>
