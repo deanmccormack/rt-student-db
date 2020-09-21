@@ -16,7 +16,7 @@ export interface StudentsApi {
 
 export class StudentsService {
 
-  endpoint: string = 'http://rt-student-demo.herokuapp.com/api/Students';
+  endpoint: string = 'https://rt-student-demo.herokuapp.com/api/Students';
   headers = new HttpHeaders()
     .set('Content-Type', 'application/json')
     .set('Authorization', `Basic ${btoa('Students:12345678')}`);
