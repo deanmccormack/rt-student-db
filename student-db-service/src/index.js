@@ -38,7 +38,7 @@ app.use(middlewares.notFound);
 
 app.use(middlewares.errorHandler);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 80;
 
 app.listen(PORT, () => {
   console.log(`Server started on ${PORT}`);
